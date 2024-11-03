@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry with Falling Objects Background</title>
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: #fbeaf2;
+            position: relative;
+        }
+        
+        /* Poem container */
+        .poem-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px 40px;
+            border-radius: 8px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 10;
+        }
+        
+        .poem-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #b33951;
+            margin-bottom: 10px;
+        }
+        .poem-author {
+            font-size: 18px;
+            font-style: italic;
+            color: #6a1b4d;
+            margin-bottom: 20px;
+        }
+        .poem-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #4d194d;
+        }
+
+        /* Falling objects */
+        .falling-object {
+            position: absolute;
+            top: -100px;
+            width: 87.5px;  /* Increased size */
+            height: 87.5px; /* Increased size */
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+            animation: fall linear infinite;
+        }
+
+        /* Randomized animation for different objects */
+        @keyframes fall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0.3; }
+        }
+
+        /* Different objects with unique images, positions, and speeds */
+        .falling-object:nth-child(1) { background-image: url('image1.jpeg'); left: 10%; animation-duration: 8s; }
+        .falling-object:nth-child(2) { background-image: url('image2.jpeg'); left: 20%; animation-duration: 10s; }
+        .falling-object:nth-child(3) { background-image: url('image3.jpeg'); left: 30%; animation-duration: 12s; }
+        .falling-object:nth-child(4) { background-image: url('image4.jpeg'); left: 40%; animation-duration: 14s; }
+        .falling-object:nth-child(5) { background-image: url('image5.jpeg'); left: 50%; animation-duration: 9s; }
+        .falling-object:nth-child(6) { background-image: url('image6.jpeg'); left: 60%; animation-duration: 11s; }
+        .falling-object:nth-child(7) { background-image: url('image7.jpeg'); left: 70%; animation-duration: 13s; }
+        .falling-object:nth-child(8) { background-image: url('image8.jpeg'); left: 80%; animation-duration: 15s; }
+        .falling-object:nth-child(9) { background-image: url('image9.jpeg'); left: 90%; animation-duration: 16s; }
+    </style>
+</head>
+<body>
+
+<div class="poem-container">
+    <div class="poem-title">A Moment of Reflection</div>
+    <div class="poem-author">By Cary for Jewell</div>
+    <div class="poem-text">
+        In a world of fleeting sights,<br>
+        Images fall like dreams of night.<br>
+        Each picture drifts, a memory's glow,<br>
+        Through silent air, it tumbles slow.<br><br>
+
+        Bright snapshots of time and place,<br>
+        Faces and moments, love's soft embrace.<br>
+        Like petals from a mystic tree,<br>
+        They float to earth, wild and free.<br><br>
+
+        They whisper secrets, soft and clear,<br>
+        Of laughter’s song and fleeting tears.<br>
+        A thousand tales in gentle flight,<br>
+        Falling through the quiet night.<br><br>
+
+        In hues of gold, in shades of gray,<br>
+        They capture life, then drift away.<br>
+        Like echoes of a distant past,<br>
+        Each fleeting glimpse too sweet to last.<br><br>
+
+        So let them fall, each cherished piece,<br>
+        These fragile dreams that never cease.<br>
+        For in their fall, we come to see<br>
+        The beauty of our memory.<br>
+    </div>
+</div>
+
+<!-- Falling objects -->
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+<div class="falling-object"></div>
+</body>
+</html>
